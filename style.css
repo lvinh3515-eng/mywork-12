@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+form {
+    font-size:1.5em;
+    width: 70%;
+    margin: auto;
+}
+label {
+    display: block;
+    background-color: lightgray;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    width: 70%;
+    transition: background-color 0.3s ease;
+}
+div.question {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+label:has(input[value="communist"]:hover),
+label:has(input[value="communist"]:checked){
+    background-color: red;
+    color: white;
+}
+
+label:has(input[value="conservative"]:hover),
+label:has(input[value="conservative"]:checked) {
+    background-color: purple;
+    color: white;
+}
+
+label:has(input[value="libertarian"]:hover),
+label:has(input[value="libertarian"]:checked) {
+    background-color: blue;
+    color: white;
+}
+
+label:has(input[value="liberal"]:hover),
+label:has(input[value="liberal"]:checked) {
+    background-color: gold;
+    color: black;
+}
+
+label:has(input[value="anarchist"]:hover),
+label:has(input[value="anarchist"]:checked) {
+    background-color: black;
+    color: white;
+}
+img {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 20px;
+}
+button {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#result {
+    display: none;
+    background-color: white;
+    width: 70%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
